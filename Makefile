@@ -1,5 +1,6 @@
 install:
-	python setup.py install --user
+	pip install -r requirements.txt
+	pip install .
 
 test:
 	nosetests
