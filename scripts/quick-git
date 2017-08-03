@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Descripton
+#
+# Quick script to push all local changes to a github repo with a default
+# message, "Quick commit.". Uses the current local branch @ HEAD.
+# 
+# Usage
+#
+# quick-git
+#
+# Notes
+#
+# Must be run in a git repository, naturally.
+
+git status
+git add -A
+git commit -m "Quick commit."
+git push origin HEAD
