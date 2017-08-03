@@ -1,6 +1,6 @@
 # kevin
 
-[![Build Status](https://travis-ci.org/kalyons11/kevin.svg?branch=master)](https://travis-ci.org/kalyons11/kevin)
+[![Build Status](https://travis-ci.org/kalyons11/kevin.svg?branch=master)](https://travis-ci.org/kalyons11/kevin) [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) 
 
 Personal repository for development and experimentation.
 
