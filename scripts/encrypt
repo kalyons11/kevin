@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+# Descripton
+#
+# Quick script to encrypt a file using the openssl des algorithm, with salt.
+#
+# Usage
+#
+# encrypt <filename>
+
+echo Starting encryption…
+fname=$1
+openssl des -in $fname -out $fname.enc -salt
+if [ $? -eq 0 ]; then
+    # Success
+    echo Encryption complete to file $fname.enc.
+    read -p "Would you like to delete the original unencrypted file? [y,n] " doit 
+    case $doit in  
+      y|Y) rm $fname; echo Removed file! ;; 
+      n|N) echo Okay, all done! ;; 
+      *) echo What? ;; 
+    esac
+else
+    # Failure
+    echo Encryption failed.
+fi

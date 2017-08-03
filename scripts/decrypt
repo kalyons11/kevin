@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# Descripton
+#
+# Quick script to decrypt a file using the openssl des algorithm.
+#
+# Usage
+#
+# decrypt <filename>
+
+echo Starting decryption…
+fname=$1
+suffix=".enc"
+out_file=${fname%$suffix}
+openssl des -d -in $fname -out $out_file
+if [ $? -eq 0 ]; then
+    # Success
+    echo Decryption complete to file $out_file.
+else
+    # Failure
+    echo Encryption failed.
+fi
