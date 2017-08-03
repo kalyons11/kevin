@@ -1,4 +1,7 @@
 # kevin
+
+[![Build Status](https://travis-ci.org/kalyons11/kevin.svg?branch=master)](https://travis-ci.org/kalyons11/kevin)
+
 Personal repository for development and experimentation.
 
 [About](#about) | [Installation](#installation) | [Structure](#structure)
