@@ -19,7 +19,7 @@ cffi==1.7.0
 chest==0.2.3
 click==6.6
 cloudpickle==0.2.1
-clyent==1.2.2
+clyent
 colorama==0.3.7
 configobj==5.0.6
 contextlib2==0.5.3
