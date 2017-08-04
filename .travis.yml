@@ -3,3 +3,10 @@ python:
   - "3.5"
 install: make install
 script: make test
+
+notifications:
+  email:
+    recipients:
+      - kalyons@mit.edu
+    on_success: always
+    on_failure: never

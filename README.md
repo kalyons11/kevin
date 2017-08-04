@@ -34,7 +34,7 @@ I have created this repository for some personal coding development and experime
 
 - `kevin` Python package
 
-	This is a package I am working on for several purposes. I would like to experiment with the latest Python technologies (potential those in [Python 3.6](https://www.python.org/downloads/)).
+	This is a package I am working on for several purposes. I would like to experiment with the latest Python technologies and improve my existing skills.
 	
 	This package is by no means production ready. Use at your own risk.
 
