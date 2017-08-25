@@ -1,9 +1,8 @@
-default:
-	install test
+default: install test
 
 install:
 	pip install -r requirements.txt
-	pip install .
+	pip install . --upgrade
 
 test:
 	nosetests
