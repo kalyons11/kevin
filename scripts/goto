@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Descripton
+#
+# Quick script to go to a particular location on my machine without having to
+# type the full path via cd ..
+#
+# Usage
+#
+# goto <key>
+
+# Get the key
+key=$1
+
+# Check it
+if [ "$1" == "nodal" ]; then
+    cd ~/Documents/mit/professional/nodal
+elif [ "$1" == "home" ]; then
+    cd ~
+elif [ "$1" == "kevin" ]; then
+    cd ~/Documents/mit/other/kevin
+else
+    # Unrecognized
+    echo "Unrecognized key. Try again."
+fi
