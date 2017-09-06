@@ -15,10 +15,20 @@ key=$1
 # Check it
 if [ "$1" == "nodal" ]; then
     cd ~/Documents/mit/professional/nodal
+elif [ "$1" == "nodal-dash" ]; then
+    cd ~/Documents/mit/professional/nodal/code/nodalWebApp/dashboardApp
 elif [ "$1" == "home" ]; then
     cd ~
 elif [ "$1" == "kevin" ]; then
     cd ~/Documents/mit/other/kevin
+elif [ "$1" == "mit" ]; then
+    cd ~/Documents/mit/
+elif [ "$1" == "prof" ]; then
+    cd ~/Documents/mit/professional
+elif [ "$1" == "secure" ]; then
+    cd ~/Documents/__secure__
+elif [ "$1" == "courses" ]; then
+    cd ~/Documents/mit/courses
 else
     # Unrecognized
     echo "Unrecognized key. Try again."
