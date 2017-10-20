@@ -20,6 +20,9 @@ git push origin HEAD
 
 # Handle Heroku case for web dev
 if [ ! -z "$1" ]; then
-    if 
-    git push heroku master
+    if [ "$1" == "heroku" ]; then
+        git push heroku master
+    else
+        echo "Unrecognized command line argument. Try again."
+    fi
 fi
