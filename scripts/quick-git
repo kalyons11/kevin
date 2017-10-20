@@ -7,7 +7,7 @@
 # 
 # Usage
 #
-# quick-git
+# quick-git <heroku>
 #
 # Notes
 #
@@ -17,3 +17,9 @@ git status
 git add -A
 git commit -m "Quick commit."
 git push origin HEAD
+
+# Handle Heroku case for web dev
+if [ ! -z "$1" ]; then
+    if 
+    git push heroku master
+fi
