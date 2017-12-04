@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+# Descripton
+#
+# Quick script to run tests up to a certain number in Python script.
+# 
+# Usage
+#
+# testpy <number - optional>
+#
+# Notes
+#
+# Each test must have the form "TestN", with N like 01...09, 10, ...
+# Must have test.py in current working directory
+
+if [ ! -z "$1" ]; then
+    # Non empty argument
+    RESULT=""
+    for (( i=1; i <= "$1"; i++))
+    do
+        A="$i"
+        # Add padding 0 case
+        if (( i < 10 )); then
+            A=0"$A"
+        fi
+        # Add to growing result var
+        RESULT="$RESULT Test$A"
+    done
+    # Run our tests
+    python test.py $RESULT
+else
+    # Run full suite of tests
+    python test.py
+fi

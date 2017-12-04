@@ -41,6 +41,8 @@ elif [ "$1" == "this" ]; then
     open ~/Documents/mit/other/kevin/scripts/goto
 elif [ "$1" == "web" ]; then
     cd ~/web
+elif [ "$1" == "wild" ]; then
+    cd ~/wildcatconnect
 else
     # Unrecognized
     echo "Unrecognized key. Try again."
