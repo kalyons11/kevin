@@ -5,7 +5,7 @@ install:
 	pip install . --upgrade
 
 test:
-	nosetests
+	nosetests --with-doctest
 
 deploy:
 	pip install pipreqs

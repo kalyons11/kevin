@@ -8,17 +8,16 @@ import numpy as np
 def strip_str(inp):
     """Helper method to strip a string of all non alphanumeric characters.
 
-    Example:
-    >>> x = 'Test-string123__:'
-    >>> y = strip_str(x)
-    >>> y
-    >>> 'teststring123'
-
     Args:
         inp (str): -
 
     Returns:
         str: stripped output
+
+    >>> x = 'Test-string123__:'
+    >>> y = strip_str(x)
+    >>> y
+    'teststring123'
     """
 
     return ''.join(ch.lower() for ch in inp if ch.isalnum())

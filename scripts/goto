@@ -29,16 +29,8 @@ elif [ "$1" == "secure" ]; then
     cd ~/Documents/__secure__
 elif [ "$1" == "courses" ]; then
     cd ~/Documents/mit/courses
-elif [ "$1" == "004" ]; then
-    cd ~/Documents/mit/courses/6.004
-elif [ "$1" == "009" ]; then
-    cd ~/Documents/mit/courses/6.009
-elif [ "$1" == "042" ]; then
-    cd ~/Documents/mit/courses/6.042
-elif [ "$1" == "magic" ]; then
-    cd ~/Documents/mit/courses/21a.520
-elif [ "$1" == "this" ]; then
-    open ~/Documents/mit/other/kevin/scripts/goto
+elif [ "$1" == "0001" ]; then
+    cd ~/Documents/mit/courses/6.0001
 elif [ "$1" == "web" ]; then
     cd ~/web
 elif [ "$1" == "wild" ]; then
