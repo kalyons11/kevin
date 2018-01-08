@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Descripton
+#
+# Quick script to init a python-based directory with virtualenv and jupter
+# configurations.
+# 
+# Usage
+#
+# cd project_dir
+# hi
+
+# Set up venv
+python -m venv env
+source env/bin/activate
+
+# Set up jupyter
+pip install jupyter ipykernel
+python -m ipykernel install --name env --display-name "Env Kernel" --prefix env/
