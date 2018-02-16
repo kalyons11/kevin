@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Descripton
+#
+# Quick script to set up Git credentials with MIT info for 6.031.
+# 
+# Usage
+#
+# mitgit
+#
+# Notes
+#
+# Must be run in a git repository, naturally.
+
+git config user.name "Kevin Lyons"
+git config user.email "kalyons@mit.edu"

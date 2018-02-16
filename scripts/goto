@@ -25,12 +25,14 @@ elif [ "$1" == "mit" ]; then
     cd ~/Documents/mit/
 elif [ "$1" == "prof" ]; then
     cd ~/Documents/mit/professional
+elif [ "$1" == "dsx" ]; then
+    cd ~/Documents/mit/professional/dsx
 elif [ "$1" == "secure" ]; then
     cd ~/Documents/__secure__
 elif [ "$1" == "courses" ]; then
     cd ~/Documents/mit/courses
-elif [ "$1" == "0001" ]; then
-    cd ~/Documents/mit/courses/6.0001
+elif [ "$1" == "031" ]; then
+    cd ~/Documents/mit/courses/6.031
 elif [ "$1" == "web" ]; then
     cd ~/web
 elif [ "$1" == "wild" ]; then
