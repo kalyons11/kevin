@@ -1,13 +1,13 @@
 """
-LeetCode test script.
+LeetCode two sum test script.
 """
 
 from unittest import TestCase
 
-from kevin.leet import *
+from kevin.leet import two_sum
 
 
-class TestUtils(TestCase):
+class TestTwoSum(TestCase):
     def test_two_sum(self):
         nums = [3, 2, 4]
         target = 6
