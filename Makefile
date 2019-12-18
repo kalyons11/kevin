@@ -7,6 +7,9 @@ install:
 test:
 	nosetests --with-doctest --nocapture
 
+lint:
+	pylint kevin
+
 deploy:
 	pip install pipreqs
 	pipreqs . --force

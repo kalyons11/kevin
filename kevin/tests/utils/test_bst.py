@@ -10,4 +10,3 @@ class TestBSTUtils(TestCase):
     def test_bst_make(self):
         n = Node(0)
         x = BST(n)
-

@@ -1,4 +1,4 @@
-setuptools
-numpy
 nose
-
+numpy
+pylint
+setuptools

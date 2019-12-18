@@ -3,8 +3,8 @@ https://leetcode.com/problems/two-sum/description/
 """
 
 
-class Solution(object):
-    def twoSum(self, nums, target):
+class Solution():
+    def two_sum(self, nums, target):
         """
         :type nums: List[int]
         :type target: int

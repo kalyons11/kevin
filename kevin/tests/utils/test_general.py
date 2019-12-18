@@ -17,7 +17,7 @@ class TestUtils(TestCase):
 
     def test_iter_method(self):
         x = 'omg'
-        x_new, result = general.validate_iter(x)
+        _, result = general.validate_iter(x)
         assert not result
 
     def test_reshape_func_easy(self):
@@ -63,4 +63,3 @@ class TestUtils(TestCase):
         out = general.reshape_image(inp, data_format='channels_first')
         assert isinstance(out, list)
         assert all(res.shape == (10, 3, 512, 512) for res in out)
-

@@ -65,21 +65,21 @@ def reshape_image(img, data_format='channels_last'):
             # tf ordering - (h, w, c)
             if one == two:
                 return mat
-            else:
-                # was (c, h, w)
-                mat_new = np.swapaxes(mat, 0, 2)  # (w, h, c)
-                mat_new = np.swapaxes(mat_new, 0, 1)  # (h, w, c)
-                return mat_new
+
+            # was (c, h, w)
+            mat_new = np.swapaxes(mat, 0, 2)  # (w, h, c)
+            mat_new = np.swapaxes(mat_new, 0, 1)  # (h, w, c)
+            return mat_new
 
         elif data_format == 'channels_first':
             # th ordering - (c, h, w)
             if two == three:
                 return mat
-            else:
-                # was (h, w, c)
-                mat_new = np.swapaxes(mat, 0, 2)  # (c, w, h)
-                mat_new = np.swapaxes(mat_new, 1, 2)  # (c, h, w)
-                return mat_new
+
+            # was (h, w, c)
+            mat_new = np.swapaxes(mat, 0, 2)  # (c, w, h)
+            mat_new = np.swapaxes(mat_new, 1, 2)  # (c, h, w)
+            return mat_new
 
     def internal_reshape_alld(mat, data_format):
         """Internal method to reshape a matrix of any shape.
