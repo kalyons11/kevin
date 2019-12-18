@@ -3,9 +3,14 @@
 class Solution:
 
     def remove_sub_folders(self, folder):
-        # Given a list of folders, remove all sub-folders in those folders and return in any order the folders after removing.
-        # If a folder[i] is located within another folder[j], it is called a sub-folder of it.
-        # The format of a path is one or more concatenated strings of the form: / followed by one or more lowercase English letters. For example, /leetcode and /leetcode/problems are valid paths while an empty string and / are not.
+        # Given a list of folders, remove all sub-folders in those folders
+        # and return in any order the folders after removing.
+        # If a folder[i] is located within another folder[j], it is called a
+        # sub-folder of it.
+        # The format of a path is one or more concatenated strings of the
+        # form: / followed by one or more lowercase English letters. For
+        # example, /leetcode and /leetcode/problems are valid paths while an
+        # empty string and / are not.
 
         # Approach:
         # 0. Create root node, map from folder to leaf nodes
