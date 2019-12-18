@@ -1,6 +1,6 @@
 language: python
 python:
-  - "3.6"
+  - "3.7"
 install: make install
 script: make test
 
@@ -8,5 +8,5 @@ notifications:
   email:
     recipients:
       - kalyons@mit.edu
-    on_success: always
-    on_failure: never
+    on_success: never
+    on_failure: always
