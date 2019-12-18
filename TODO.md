@@ -1,3 +1,3 @@
 # TODO
 
-- Still trying to figure out this git hook - I think I'm close!
+- None at this time
