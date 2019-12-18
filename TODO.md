@@ -1,3 +1,3 @@
 # TODO
 
-Nothing to do right now, more stuff to come soon!
+- Still trying to figure out this git hook
