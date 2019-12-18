@@ -16,5 +16,7 @@ class Solution:
         # 1. Split folders into their directories by path
         # 2. Create nodes for each folder, marking when a node is child
         # 3. Check when a parent node is a child - if so, remove that path?
+        
+        # TODO consider different implementation for this method
         pass
 
