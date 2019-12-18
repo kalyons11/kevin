@@ -14,12 +14,9 @@ class Solution(object):
         """
         # Simple cases
         if len(nums) < 2:
-            print('a')
             return None
         if len(nums) == 2:
-            print('b')
             if nums[0] + nums[1] == target:
-                print('c')
                 return [0, 1]
             return None
 
