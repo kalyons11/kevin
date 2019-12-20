@@ -57,6 +57,7 @@ class GPACalculator:
         except:
             raise ValueError('Invalid grade {grade}'.format(grade=grade))
 
+
 if __name__ == '__main__':
     # Set up argument parsing
     parser = get_parser()
