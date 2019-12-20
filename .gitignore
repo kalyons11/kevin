@@ -102,3 +102,6 @@ ENV/
 
 # Test files
 *test.txt*
+
+# Data files
+*.csv
