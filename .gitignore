@@ -105,3 +105,6 @@ ENV/
 
 # Data files
 *.csv
+
+# Compiled C files
+c_*

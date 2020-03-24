@@ -136,12 +136,7 @@ void arrays() {
     printf("%s\n", phrase);
 }
 
-void funcs() {
-
-}
-
 int main() {
-
     // otherFormatting();
     // numbers();
     // math();
@@ -150,8 +145,6 @@ int main() {
     // userInput();
     // calc();
     // arrays();
-    funcs();
 
     return 0;
-
 }
