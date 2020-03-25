@@ -209,6 +209,26 @@ void structs() {
 
 }
 
+void loopsWhile() {
+	int index = 1;
+	while (index <= 5) {
+		printf("%d\n", index);
+		index++;
+	}
+
+	do { } while(0 == 1);
+
+	const int secretNumber = 5;
+	int guess;
+
+	while (guess != secretNumber) {
+		printf("Enter a number: " );
+		scanf("%d", &guess);
+	}
+
+	printf("You win!\n");
+}
+
 int main() {
     // otherFormatting();
     // numbers();
@@ -219,7 +239,8 @@ int main() {
     // calc();
     // arrays();
     // ifs();
-    structs();
+    // structs();
+    loopsWhile();
 
     return 0;
 }
