@@ -216,7 +216,7 @@ void loopsWhile() {
         index++;
     }
 
-    do { } while(0 == 1);
+    do { } while (0 == 1);
 
     const int secretNumber = 5;
     int guess;
