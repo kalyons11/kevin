@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <string.h>
 
 int stringFormatting() {
     char characterName[] = "John";
@@ -136,6 +137,78 @@ void arrays() {
     printf("%s\n", phrase);
 }
 
+int max(int one, int two) {
+    if (one > two) {
+        return one;
+    } return two;
+}
+
+void ifs() {
+    printf("%d\n", max(10, 4)); // 10
+    printf("%d\n", max(8, 9)); // 9
+    printf("%d\n", max(0, 0)); // 0
+
+    if (! (3 > 2)) {
+        printf("this shouldn't print\n");
+    }
+
+    if (! (3 < 2)) {
+        printf("yup!\n");
+    }
+
+    const char grade = 'A';
+
+    switch (grade) {
+        case 'A':
+            printf("You did great!\n");
+            break;
+        case 'B':
+            printf("You did alright!\n");
+            break;
+        case 'C':
+            printf("You did poorly.\n");
+            break;
+        case 'D':
+            printf("You did bad.\n");
+        case 'F':
+            printf("You failed!\n");
+            break;
+        default:
+            printf("Invalid grade");
+            break;
+    }
+}
+
+/* Defining a struct. */
+struct Student {
+	char name[50];
+	char major[50];
+	int age;
+	double gpa;
+};
+
+void structs() {
+	struct Student studentOne;
+	studentOne.age = 22;
+	studentOne.gpa = 3.2;
+	// Need to use strcpy to set this field on the struct
+	strcpy(studentOne.name, "Jim");
+	strcpy(studentOne.major, "Business");
+
+	printf("%f\n", studentOne.gpa);
+	printf("%s\n", studentOne.name);
+
+	struct Student studentTwo;
+	studentTwo.age = 20;
+	studentTwo.gpa = 2.5;
+	strcpy(studentTwo.name, "Pam");
+	strcpy(studentTwo.major, "Art");
+
+	printf("%f\n", studentTwo.gpa);
+	printf("%s\n", studentTwo.name);
+
+}
+
 int main() {
     // otherFormatting();
     // numbers();
@@ -145,6 +218,8 @@ int main() {
     // userInput();
     // calc();
     // arrays();
+    // ifs();
+    structs();
 
     return 0;
 }
