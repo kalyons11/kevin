@@ -181,52 +181,52 @@ void ifs() {
 
 /* Defining a struct. */
 struct Student {
-	char name[50];
-	char major[50];
-	int age;
-	double gpa;
+    char name[50];
+    char major[50];
+    int age;
+    double gpa;
 };
 
 void structs() {
-	struct Student studentOne;
-	studentOne.age = 22;
-	studentOne.gpa = 3.2;
-	// Need to use strcpy to set this field on the struct
-	strcpy(studentOne.name, "Jim");
-	strcpy(studentOne.major, "Business");
+    struct Student studentOne;
+    studentOne.age = 22;
+    studentOne.gpa = 3.2;
+    // Need to use strcpy to set this field on the struct
+    strcpy(studentOne.name, "Jim");
+    strcpy(studentOne.major, "Business");
 
-	printf("%f\n", studentOne.gpa);
-	printf("%s\n", studentOne.name);
+    printf("%f\n", studentOne.gpa);
+    printf("%s\n", studentOne.name);
 
-	struct Student studentTwo;
-	studentTwo.age = 20;
-	studentTwo.gpa = 2.5;
-	strcpy(studentTwo.name, "Pam");
+    struct Student studentTwo;
+    studentTwo.age = 20;
+    studentTwo.gpa = 2.5;
+    strcpy(studentTwo.name, "Pam");
 	strcpy(studentTwo.major, "Art");
 
-	printf("%f\n", studentTwo.gpa);
-	printf("%s\n", studentTwo.name);
+    printf("%f\n", studentTwo.gpa);
+    printf("%s\n", studentTwo.name);
 
 }
 
 void loopsWhile() {
-	int index = 1;
-	while (index <= 5) {
-		printf("%d\n", index);
-		index++;
-	}
+    int index = 1;
+    while (index <= 5) {
+        printf("%d\n", index);
+        index++;
+    }
 
-	do { } while(0 == 1);
+    do { } while(0 == 1);
 
-	const int secretNumber = 5;
-	int guess;
+    const int secretNumber = 5;
+    int guess;
 
-	while (guess != secretNumber) {
-		printf("Enter a number: " );
-		scanf("%d", &guess);
-	}
+    while (guess != secretNumber) {
+        printf("Enter a number: " );
+        scanf("%d", &guess);
+    }
 
-	printf("You win!\n");
+    printf("You win!\n");
 }
 
 int main() {
