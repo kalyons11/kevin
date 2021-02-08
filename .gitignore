@@ -108,3 +108,6 @@ ENV/
 
 # Compiled C files
 c_*
+
+# .DS_Store files
+.DS_Store
