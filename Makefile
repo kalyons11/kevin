@@ -6,6 +6,7 @@ install:
 
 test:
 	nosetests --with-doctest --nocapture
+	cd kevin/tests; chmod +x run_cpp_tests.sh; ./run_cpp_tests.sh
 
 lint:
 	pylint kevin
